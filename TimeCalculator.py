@@ -41,7 +41,7 @@ def add_time(start, duration, day = "none"):
                 weekday = 7
         dayAfterNum = weekday + daysAfter
         if dayAfterNum > 7:
-            dayAfterNum -= 7
+            dayAfterNum = ((dayAfterNum - 1) % 7) + 1
         match dayAfterNum:
             case 1:
                 dayAfter = "Monday"
@@ -135,3 +135,4 @@ def add_time(start, duration, day = "none"):
     
 print(add_time("3:00 PM", "24:20", "Friday")) # "3:20 PM, Saturday (next day)"
 print(add_time("3:00 PM", "24:20")) # "3:20 PM (next day)"
+print(add_time('8:16 PM', '466:02', 'tuesday'))
