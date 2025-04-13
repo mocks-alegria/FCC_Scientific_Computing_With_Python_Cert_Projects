@@ -135,4 +135,4 @@ def add_time(start, duration, day = "none"):
     
 print(add_time("3:00 PM", "24:20", "Friday")) # "3:20 PM, Saturday (next day)"
 print(add_time("3:00 PM", "24:20")) # "3:20 PM (next day)"
-print(add_time('8:16 PM', '466:02', 'tuesday'))
+print(add_time('8:16 PM', '466:02', 'tuesday')) # "6:18 AM, Monday (20 days later)"
